@@ -289,41 +289,51 @@ export default function Home() {
       <section className="py-24 bg-white border-t-4 border-black relative overflow-hidden">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl md:text-8xl brutalist-heading mb-16 text-center leading-none">
-            CLIENT <span className="bg-[#FFDE59] px-4 shadow-brutalist border-4 border-black">RESULTS</span>
+            CLIENT{" "}
+            <span className="bg-[#FFDE59] px-4 shadow-brutalist border-4 border-black">
+              RESULTS
+            </span>
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
                 text: "Chirag did an amazing job editing our promotional videos. The quality, creativity, and attention to detail were outstanding. His work helped us present our brand in a much more professional and engaging way.",
                 client: "Poojara Phones",
-                label: "RETAIL BRAND"
+                label: "RETAIL BRAND",
               },
               {
                 text: "Working with Chirag for our YouTube channel was a great experience. He understands content flow and audience retention very well. His editing made our educational videos more engaging and easy to follow.",
                 client: "Educational Hix (YouTube)",
-                label: "200K+ SUBS"
+                label: "200K+ SUBS",
               },
               {
                 text: "Chirag created high-quality Instagram reels for us that significantly improved our engagement. His editing style is modern, fast-paced, and perfectly suited for social media growth.",
                 client: "SkillPaisa (Instagram)",
-                label: "INSTAGRAM GROWTH"
+                label: "INSTAGRAM GROWTH",
               },
               {
                 text: "Chirag is a highly skilled video editor and videographer. He handled both shooting and editing for our clients’ projects with professionalism and creativity. A reliable and talented person to work with.",
                 client: "Burhani Socials",
-                label: "MARKETING AGENCY"
-              }
+                label: "MARKETING AGENCY",
+              },
             ].map((t, i) => (
-              <div key={i} className="bg-[#FFDE59] border-4 border-black p-8 shadow-brutalist-lg relative group transition-transform hover:-translate-y-2">
-                <div className="absolute -top-6 -left-4 text-7xl font-black text-black leading-none opacity-20">"</div>
+              <div
+                key={i}
+                className="bg-[#FFDE59] border-4 border-black p-8 shadow-brutalist-lg relative group transition-transform hover:-translate-y-2"
+              >
+                <div className="absolute -top-6 -left-4 text-7xl font-black text-black leading-none opacity-20">
+                  "
+                </div>
                 <p className="text-xl font-black uppercase leading-tight mb-8 relative z-10 italic">
                   {t.text}
                 </p>
                 <div className="flex items-center justify-between border-t-4 border-black pt-4">
                   <div>
                     <h4 className="text-lg font-black uppercase">{t.client}</h4>
-                    <span className="text-[10px] font-bold bg-black text-white px-2 py-0.5 uppercase tracking-widest">{t.label}</span>
+                    <span className="text-[10px] font-bold bg-black text-white px-2 py-0.5 uppercase tracking-widest">
+                      {t.label}
+                    </span>
                   </div>
                   <CheckCircle2 className="w-8 h-8 text-black" />
                 </div>
