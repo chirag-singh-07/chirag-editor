@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "CINEMATIC TRAVEL VLOG",
+    "description": "Color Grading + Sound Design + Transitions",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "thumbnail": "https://images.unsplash.com/photo-1492691523567-6170f0295df"
+  },
+  {
+    "id": "2",
+    "title": "PRODUCT COMMERCIAL",
+    "description": "Dynamic Cuts + Motion Graphics",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "thumbnail": "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+  },
+  {
+    "id": "3",
+    "title": "GAMING HIGHLIGHTS",
+    "description": "Fast-paced Editing + Effects",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e"
+  },
+  {
+    "id": "4",
+    "title": "CORPORATE STORYTELLING",
+    "description": "Interview Cuts + B-Roll Integration",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "thumbnail": "https://images.unsplash.com/photo-1497215842964-22292fa3fb70"
+  }
+]
