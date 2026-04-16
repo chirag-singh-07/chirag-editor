@@ -12,6 +12,7 @@ interface Video {
   description?: string;
   url: string;
   type?: string;
+  thumbnail?: string;
 }
 
 export const VideoGrid = ({ videos, type }: { videos: Video[], type: "short" | "long" }) => {
