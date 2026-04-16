@@ -17,6 +17,12 @@
   --border-width-brutalist-thick: 4px;
 
   --animate-press: press 0.1s ease-in-out forwards;
+  --animate-spin-slow: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @keyframes press {
@@ -27,12 +33,13 @@
 }
 
 body {
-  background-color: var(--background);
+  background-color: #FFFFFF;
+  color: #000000;
   font-family: var(--font-inter), sans-serif;
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(rgba(255, 222, 89, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 222, 89, 0.15) 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
 .brutalist-card {
@@ -40,7 +47,9 @@ body {
 }
 
 .brutalist-button {
-  @apply border-2 border-black bg-black text-white px-6 py-3 font-black uppercase tracking-tight shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-[#FFDE59] hover:text-black active:translate-x-[4px] active:translate-y-[4px] active:shadow-none;
+  @apply border-2 border-black bg-black text-white px-6 py-3 font-black uppercase tracking-tight shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all 
+  hover:bg-[#FFDE59] hover:text-black hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none
+  active:translate-x-[6px] active:translate-y-[6px];
 }
 
 .brutalist-heading {
