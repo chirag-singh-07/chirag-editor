@@ -3,7 +3,8 @@
 import { Button } from "@/components/Button";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { VideoGrid } from "@/components/VideoGrid";
-import { Video, Palette, Zap, CheckCircle2 } from "lucide-react";
+import { PhotographyGallery } from "@/components/PhotographyGallery";
+import { Video, Palette, Zap, CheckCircle2, Camera } from "lucide-react";
 import { motion } from "framer-motion";
 import { shorts, featured } from "@/data/videos";
 import Link from "next/link";
@@ -50,8 +51,7 @@ export default function Home() {
               VISUAL STORIES
             </h1>
             <p className="text-xl md:text-2xl font-black uppercase mb-10 tracking-tight bg-black text-white inline-block px-4 py-2 border-4 border-black shadow-brutalist">
-              TRANSFORMING RAW FOOTAGE INTO HIGH-CONVERTING CINEMATIC
-              EXPERIENCES.
+              CAPTURING MOMENTS & TRANSFORMING RAW FOOTAGE INTO HIGH-CONVERTING CINEMATIC EXPERIENCES.
             </p>
             <div className="flex flex-col md:flex-row gap-6 justify-center">
               <Link href="/videos">
@@ -70,6 +70,14 @@ export default function Home() {
               >
                 HIRE ME
               </Button>
+              <a href="/resume.pdf" target="_blank" download className="w-full md:w-auto">
+                <Button
+                  variant="secondary"
+                  className="w-full text-xl px-12 py-6 bg-white text-black hover:bg-[#FFDE59] border-4 border-black"
+                >
+                  RESUME
+                </Button>
+              </a>
             </div>
           </motion.div>
 
@@ -89,8 +97,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 1.5. PHOTOGRAPHY GALLERY */}
+      <PhotographyGallery />
+
       {/* 2. PREVIEW WORK */}
-      <section id="work" className="py-20 bg-white border-y-4 border-black">
+      <section id="work" className="py-20 bg-white border-b-4 border-black">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl md:text-7xl brutalist-heading mb-12">
             <span className="bg-[#FFDE59] px-6 py-2 border-4 border-black shadow-brutalist uppercase">
@@ -235,7 +246,7 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="bg-[#FFDE59] text-black border-4 border-white shadow-[10px_10px_0px_white] p-8">
                   <p className="text-xl font-black uppercase leading-tight">
-                    Video Editor, Videographer, and Creative Storyteller with{" "}
+                    Video Editor, Videographer, Photographer and Creative Storyteller with{" "}
                     <span className="bg-black text-white px-2">3+ YEARS</span>{" "}
                     of professional expertise.
                   </p>
@@ -268,6 +279,13 @@ export default function Home() {
                       </span>
                     </div>
                   ))}
+                </div>
+                <div className="pt-6">
+                  <a href="/resume.pdf" target="_blank" download>
+                    <Button className="bg-[#FFDE59] text-black hover:bg-white text-xl px-12 py-6 border-4 border-white shadow-[6px_6px_0px_white] w-full md:w-auto">
+                      DOWNLOAD RESUME
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
